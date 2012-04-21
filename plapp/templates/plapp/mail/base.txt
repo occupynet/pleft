@@ -7,7 +7,6 @@
 {% block content %}{% endblock %}
 {% trans "Sincerely," %}
 
-{% blocktrans with site_name as name %}The {{ name }} Team{% endblocktrans %}
 {{ site_link }}
 
 {% endautoescape %}
