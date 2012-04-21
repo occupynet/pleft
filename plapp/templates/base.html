@@ -23,7 +23,7 @@
 {% block styles %}{% endblock %}
 
 <script src='{% url django.views.i18n.javascript_catalog %}?lang={{ request.LANGUAGE_CODE }}'></script>
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
+<script src='{{ STATIC_URL }}script/jquery/jquery-1.7.min.js'></script>
 <script src='{{ STATIC_URL }}script/menubar.js'></script>
 {% if settings.USERVOICE_ID %}
 <script>
